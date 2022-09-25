@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--* =============== FAV ICON ============== -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/travelo-favicon.svg"
+      type="image/x-icon"
+    />
+    <!--* =============== GOOGLE FONTS ============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--* =============== CSS LINK ============== -->
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+
+
+    <!--* =============== SWEIPER JS LINK ============== -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+
+
+    <!--* =============== JAVASCRIPT LINK ============== -->
+    <script src="./assets/javascript/script.js" defer></script>
+    <title>Travelo Website</title>
+  </head>
+
+  <body>
+    <!--* =============== HEADER START ============== -->
+    <section class="header__wrapper " id="header__wrapper">
+      <header class="header">
+        <a href="#header__wrapper" class="logo__cont">
+          <img
+            src="./assets/images/logo.svg"
+            alt="logo image"
+            class="logo__img"
+          />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#header__wrapper" class="nav__link">Home</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href=" #destination__wraper" class="nav__link">Destination</a></li>
+            <li><a href="#experience" class="nav__link">Experience</a></li>
+            <li><a href="#testimonials " class="nav__link">Testimonials</a></li>
+          </ul>
+          <a href="#" class="btn btn__register">Register</a>
+        </nav>
+
+        <button class="hambergur__menu">
+          <img
+            src="./assets/images/Menu.svg"
+            alt="hambegur menu"
+            class="menu"
+          />
+          <img
+            src="./assets/images/Cross.svg"
+            alt="hambegur menu cross"
+            class="cross"
+          />
+        </button>
+      </header>
+      <div class="header__padding">
+      <h1 class="main__header">
+        It’s a Big World Out There, Go
+        <span class="main__header-span">Explore</span>
+      </h1>
+      <div class="hero__desc">
+        We always make our customers happy by providing the best places
+        possiable
+      </div>
+
+      <div class="booking__choose">
+        <p class="flight current">Flights ✈️</p>
+        <p class="hotel">Hotel 🏨</p>
+        <p class="rent__car">Rent car 🚗</p>
+      </div>
+
+      <form class="form">
+        <div class="destination form__item">
+          <label for="destination">
+            <ion-icon
+              name="location-sharp"
+              class="location__icon form__icons"
+            ></ion-icon>
+            <span class="form__item__text">Destination</span></label
+          >
+
+          <select class="select__menu" required>
+            <option value="all" hidden="true">Choose Destination:</option>
+            <option value="bali">Bali</option>
+            <option value="cancun">Cancun</option>
+            <option value="maldeves">Maldeves</option>
+            <option value="lisbon">Lisbon</option>
+          </select>
+        </div>
+
+        <div class="when__to__start form__item">
+          <label for="when-to-tart">
+            <ion-icon
+              name="calendar-number-sharp"
+              class="calendar__icon form__icons"
+            ></ion-icon>
+            <span class="form__item__text">When to start</span></label
+          >
+<label for="date">
+          <input type="date" required  name="date"/>
+        </label>
+        </div>
+
+        <div class="people form__item">
+          <label for="people">
+            <ion-icon
+              name="people-sharp"
+              class="people__icon form__icons"
+            ></ion-icon>
+            <span class="form__item__text">People</span></label
+          >
+<label for="people">
+          <input type="number" placeholder="people"name="people" required />
+        </label>
+        </div>
+<label for="submit">
+        <input type="submit" value="Search Place" name="submit"/>
+      </label>
+      </form>
+    </div>
+    </section>
+
+    <!--* =============== SECTION SERVICES ============== -->
+    <section class="services" id="services"> 
+      <h3 class="tertiary__header">WHAT WE SERVE</h3>
+      <h2 class="secondary__header">Top Values For You 🔥</h2>
+<div class="services__cont">
+      <div class="service">
+        <img
+          src="./assets/images/world-icon.png"
+          alt="globe icon"
+          class="service__illustrator"
+        />
+        <p class="service__header">Lot Of Choises</p>
+        <p class="service__text">460+ destinations that we work with.</p>
+      </div>
+
+      <div class="service">
+        <img
+          src="./assets/images/suitcase.png"
+          alt="SUITCASE icon"
+          class="service__illustrator"
+        />
+        <p class="service__header">Best Tour Guide</p>
+        <p class="service__text">our tour guide has 15+ years of experiece.</p>
+      </div>
+      <div class="service">
+        <img
+          src="./assets/images/passport.png"
+          alt="PASSPORT icon"
+          class="service__illustrator"
+        />
+        <p class="service__header">Easy Booking</p>
+        <p class="service__text">
+          with an easy and fast ticket purchase process.
+        </p>
+      </div>
+</div>
+
+    </section>
+
+    <!--* =============== SECTION DESTINATIONS ============== -->
+    <div id="destination__wraper">
+
+    <section class="destinations" id="destinations"> 
+      <h3 class="tertiary__header">Top Destinations</h3>
+      <h2 class="secondary__header">Explore Top Destinations ✈️</h2>
+
+      <div class="destination__cards">
+        <!-- ! card start -->
+        <div class="dest__card">
+          <div class="dest__img-cont dest__img-cont__bali">
+            <img
+              src="./assets/images/bali.jpg"
+              alt="bali"
+              class="dest__img"
+            />
+          </div>
+
+          <p class="destination__header">Enjoy Beautiful Nature</p>
+          <p class="dest__location">
+            <span>
+              <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+            </span>
+            <span class="destination__text"> Bali, Indonesia </span>
+          </p>
+          
+          <div class="dest__review">
+            <p>
+              <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+              4.9
+            </p>
+
+            <p class="review__text">2.5k(reviews)</p>
+          </div>
+
+        </div>
+        
+        <!-- ! card start -->
+        <div class="dest__card">
+          <div class="dest__img-cont dest__img-cont__cancun">
+            <img
+              src="./assets/images/cancun.jpg"
+              alt="cancun Mexico"
+              class="dest__img"
+            />
+          </div>
+
+          <p class="destination__header">Enjoy Beautiful Beaches</p>
+          <p class="dest__location">
+            <span>
+              <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+            </span>
+            <span class="destination__text">Cancun, Mexico </span>
+          </p>
+
+          <div class="dest__review">
+            <p>
+              <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+              4.7
+            </p>
+
+            <p class="review__text">1.7k(reviews)</p>
+          </div>
+
+        </div>
+        <!-- ! card start -->
+        <div class="dest__card">
+          <div class="dest__img-cont dest__img-cont__maldeves">
+            <img
+              src="./assets/images/maldeves.jpg"
+              alt="maldeves"
+              class="dest__img"
+            />
+          </div>
+
+          <p class="destination__header">Enjoy Floting Houses</p>
+          <p class="dest__location">
+            <span>
+              <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+            </span>
+            <span class="destination__text">Maldeves</span>
+          </p>
+
+          <div class="dest__review">
+            <p>
+              <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+              4.8
+            </p>
+
+            <p class="review__text">2.6k(reviews)</p>
+          </div>
+
+        </div>
+        <!-- ! card start -->
+        <div class="dest__card">
+          <div class="dest__img-cont dest__img-cont__lisbon">
+            <img
+              src="./assets/images/lisbon.jpg"
+              alt="lisbon portugal"
+              class="dest__img"
+            />
+          </div>
+
+          <p class="destination__header">Enjoy Beautiful View</p>
+          <p class="dest__location">
+            <span>
+              <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+            </span>
+            <span class="destination__text">Lisbon, Portugal</span>
+          </p>
+
+          <div class="dest__review">
+            <p>
+              <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+              4.3
+            </p>
+
+            <p class="review__text">2.1k(reviews)</p>
+          </div>
+
+        </div>
+  </div>
+    </section>
+
+    <!--* =============== SWIPER ============== -->
+    <div class="swiper mySwiper" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bali__cont">
+          <img
+          src="./assets/images/bali.jpg"
+          alt="bali"
+          class="dest__img"
+        />
+        <p class="destination__header">Enjoy Beautiful Nature</p>
+          <p class="dest__location">
+            <span>
+              <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+            </span>
+            <span class="destination__text"> Bali, Indonesia </span>
+          </p>
+          
+          <div class="dest__review">
+            <p>
+              <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+              4.9
+            </p>
+
+            <p class="review__text">2.5k(reviews)</p>
+          </div>
+        </div>
+        <div class="swiper-slide cancun__cont">
+          <img
+            src="./assets/images/cancun.jpg"
+            alt="cancun Mexico"
+            class="dest__img"
+          />
+
+        <p class="destination__header">Enjoy Beautiful Beaches</p>
+        <p class="dest__location">
+          <span>
+            <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+          </span>
+          <span class="destination__text">Cancun, Mexico </span>
+        </p>
+
+        <div class="dest__review">
+          <p>
+            <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+            4.7
+          </p>
+
+          <p class="review__text">1.7k(reviews)</p>
+        </div>
+
+        </div>
+        <div class="swiper-slide maldeves__cont">
+          <img
+          src="./assets/images/maldeves.jpg"
+          alt="maldeves"
+          class="dest__img"
+        />
+
+      <p class="destination__header">Enjoy Floting Houses</p>
+      <p class="dest__location">
+        <span>
+          <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+        </span>
+        <span class="destination__text">Maldeves</span>
+      </p>
+
+      <div class="dest__review">
+        <p>
+          <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+          4.8
+        </p>
+
+        <p class="review__text">2.6k(reviews)</p>
+      </div>
+        </div>
+        <div class="swiper-slide lisbon__cont">
+          <img
+              src="./assets/images/lisbon.jpg"
+              alt="lisbon portugal"
+              class="dest__img"
+            />
+
+          <p class="destination__header">Enjoy Beautiful View</p>
+          <p class="dest__location">
+            <span>
+              <ion-icon name="location-sharp" class="location__icon"></ion-icon>
+            </span>
+            <span class="destination__text">Lisbon, Portugal</span>
+          </p>
+
+          <div class="dest__review">
+            <p>
+              <ion-icon name="star-sharp" class="stat__icon"></ion-icon>
+              4.3
+            </p>
+
+            <p class="review__text">2.1k(reviews)</p>
+          </div>
+
+        </div>
+
+      </div>
+<!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+    </div>
+  </div>
+    <!--* =============== SECTION EXPERIENCE ============== -->
+    <section class="experience" id="experience">
+      <div class="experience__cont">
+        <div class="experiece__wraper-content">
+      <h3 class="tertiary__header">OUR EXPERIENCE</h3>
+      <h2 class="secondary__header experiece__secondary__header">
+
+        With Our Experience We Will Serve You 😊
+      </h2>
+      <p class="experince__detail">
+        sense we open up we prioritiezed the convenience of our costumers by
+        providing low price and high quality servive your satisfiction is our
+        happines
+      </p>
+<div class="numbers__cont">
+      <p class="years__expr">
+        <span class="years">15+</span>
+        Years
+      </p>
+      <p class="dest__collab">
+        <span class="Collab">460+</span>
+        Destination Collaboration
+      </p>
+      <p class="costumers__num">
+        <span class="customers">50K+</span>
+        Happy Customers
+      </p>
+    </div>
+  </div>
+
+  <div class="experiece__wraper-img">
+      <img
+        src="./assets/images/travel-illustrator-mobile.svg"
+        alt="travel-illustrator-mobile"
+        class="experience__illust"
+      />
+    </div>
+    </div>
+    </section>
+
+    <!--* =============== SECTION TESTIMONIALS ============== -->
+    <section class="testimonials" id="testimonials">
+      <h3 class="tertiary__header testimonials__header">TESTIMONIALS</h3>
+      <div class="testimonial__wrapper">
+      <div class="testimonial">
+        <img src="./assets/images/qout icon.svg" alt="" class="quote__icon" />
+        <p class="testimonial__text">
+          “ Thanks to travelo i can now realise my dream of traveling around the
+          world ”
+        </p>
+        <div class="testimonial__author-cont">
+          <img
+            src="./assets/images/testimonial-1.png"
+            alt=""
+            class="test__author-img"
+          />
+          <p class="test__det">
+            <span class="author__name">Mark Antony</span>
+            <span class="author__job">Photographer</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <img src="./assets/images/qout icon.svg" alt="" class="quote__icon" />
+        <p class="testimonial__text">
+          “Travelo helps me to get Budget friendly Locations and High quality
+          services”
+        </p>
+        <div class="testimonial__author-cont">
+          <img
+            src="./assets/images/testimonial-2.png"
+            alt=""
+            class="test__author-img"
+          />
+          <p class="test__det">
+            <span class="author__name">Ania jones</span>
+            <span class="author__job">Fashion Designer</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <img src="./assets/images/qout icon.svg" alt="" class="quote__icon" />
+        <p class="testimonial__text">
+          “I’m A Digital Nomad And Travelo Helps me to Find Intresting places. ”
+        </p>
+        <div class="testimonial__author-cont">
+          <img
+            src="./assets/images/testimonial-3.png"
+            alt=""
+            class="test__author-img"
+          />
+          <p class="test__det">
+            <span class="author__name">Chris Richard</span>
+            <span class="author__job">Software Engineer</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <img src="./assets/images/qout icon.svg" alt="" class="quote__icon" />
+        <p class="testimonial__text">
+          “Travelo helps me to get Budget friendly Locations and High quality
+          services”
+        </p>
+        <div class="testimonial__author-cont">
+          <img
+            src="./assets/images/testimonial-4.png"
+            alt=""
+            class="test__author-img"
+          />
+          <p class="test__det">
+            <span class="author__name">Alisha William</span>
+            <span class="author__job">sales Manager</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!--* =============== SECTION DISCOVER ============== -->
+    <section class="discover">
+      <div class="discover__container">
+
+      <h3 class="tertiary__header">START YOUR ADVENTURE</h3>
+      <h2 class="secondary__header">Lets Explore The World</h2>
+      <p class="discover__text">We Have many Special Offers For You</p>
+      <a href="#" class="book__now">BOOK NOW</a>
+    </div>
+
+    </section>
+
+    <!--* =============== FOOTER ============== -->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__col col__1">
+      <a href="#">
+      <img src="./assets/images/Footer Logo.svg" alt="logo" 
+      class="footer__logo">
+    </a>
+
+      <p class="footer__col-1__det">We always make our customers happy by providing as many choises as possiable</p>
+      <div class="social__container">
+      <img src="./assets/images/twitter.svg" alt="twitter" class="social__icon">
+      <img src="./assets/images/instagram.svg" alt="instagram" class="social__icon">
+      <img src="./assets/images/Facebook.svg" alt="Facebook" class="social__icon">
+      </div>
+    </div>
+    <div class="footer__col col__2">
+      <p class="footer__col-header">About</p>
+      <ul class="footer__col-list">
+        <li ><a href="#"  class="footer__col-item">About Us</a> </li>
+        <li ><a href="#"  class="footer__col-item">Features</a> </li>
+        <li ><a href="#"  class="footer__col-item">News</a> </li>
+        <li ><a href="#"  class="footer__col-item">Menu</a> </li>
+      </ul>
+    </div>
+    <div class="footer__col col__3">
+      <p class="footer__col-header">Company</p>
+      <ul class="footer__col-list">
+        <li ><a href="#"  class="footer__col-item">Why Travelo?</a> </li>
+        <li ><a href="#"  class="footer__col-item">Partener With Us</a> </li>
+        <li ><a href="#"  class="footer__col-item">FAQ</a> </li>
+        <li ><a href="#"  class="footer__col-item">Blog</a> </li>
+      </ul>
+    </div>
+    <div class="footer__col col__4">
+      <p class="footer__col-header">Support</p>
+      <ul class="footer__col-list">
+        <li ><a href="#"  class="footer__col-item">Account</a> </li>
+        <li ><a href="#"  class="footer__col-item">Support Center</a> </li>
+        <li ><a href="#"  class="footer__col-item">Feedback</a> </li>
+        <li ><a href="#"  class="footer__col-item">Contact Us</a> </li>
+        <li ><a href="#"  class="footer__col-item">Accesability</a> </li>
+      </ul>
+    </div>
+    <div class="footer__col col__5">
+      <p class="footer__col-header">Get In Touch</p>
+      <p class="footer__col-5__det">Question Or Feedback 
+        We’d Love To Hear You</p>
+        <div class="input__cont">
+          <label for="email">
+          <input type="email" placeholder="Please Inter Your Email" class="footer__input"required name="email">
+        </label>
+          <button type="submit" class="button__footer"><img src="./assets/images/submit Button.svg" alt="button icon" class="submit__button-img"></button>
+        </div>
+    </div>
+  </div>
+</footer>
+<a href="#header__wrapper" class="btn__bck-top"><ion-icon name="arrow-up"></ion-icon></a>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    
+  </body>
+</html>
