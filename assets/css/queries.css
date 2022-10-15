@@ -95,6 +95,8 @@
   }
   .services {
     padding: 0 7rem;
+    max-width: 144rem;
+    margin: 0 auto;
   }
 
   .destinations {
@@ -210,6 +212,8 @@
   }
   .header__padding {
     padding: 0 9rem;
+max-width: 144rem;
+    margin: 0 auto;
   }
 
   .nav {
@@ -348,6 +352,10 @@
   .discover,
   .footer {
     padding: 0 9rem;
+  }
+  .swiper {
+    max-width: 144rem;
+    margin: 0 auto;
   }
 }
 
